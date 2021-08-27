@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF299D2826D7C2ED0065A925 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF299D2726D7C2ED0065A925 /* AppDelegate.m */; };
+		FF299D2B26D7C2ED0065A925 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF299D2A26D7C2ED0065A925 /* ViewController.mm */; };
+		FF299D2D26D7C2EF0065A925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF299D2C26D7C2EF0065A925 /* Assets.xcassets */; };
+		FF299D3026D7C2EF0065A925 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF299D2E26D7C2EF0065A925 /* Main.storyboard */; };
+		FF299D3326D7C2EF0065A925 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF299D3226D7C2EF0065A925 /* main.m */; };
+		FF299D3E26D7C2EF0065A925 /* ShowObjModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF299D3D26D7C2EF0065A925 /* ShowObjModelTests.m */; };
+		FF299D4926D7C2EF0065A925 /* ShowObjModelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF299D4826D7C2EF0065A925 /* ShowObjModelUITests.m */; };
+		FF299D5826D7C3200065A925 /* ObjGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF299D5726D7C3200065A925 /* ObjGLView.mm */; };
+		FF299D5B26D7C3A20065A925 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF299D5926D7C3A20065A925 /* Shader.cpp */; };
+		FF299D5E26D7C4FC0065A925 /* StringSupport.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF299D5C26D7C4FC0065A925 /* StringSupport.mm */; };
+		FF299D6126D7C6BD0065A925 /* Mesh.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF299D5F26D7C6BD0065A925 /* Mesh.mm */; };
+		FF299D6426D7C7290065A925 /* Texture.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF299D6226D7C7290065A925 /* Texture.mm */; };
+		FF299D6726D7C7760065A925 /* Time.mm in Sources */ = {isa = PBXBuildFile; fileRef = FF299D6526D7C7760065A925 /* Time.mm */; };
+		FF299D7326D7C9460065A925 /* plane.obj in Resources */ = {isa = PBXBuildFile; fileRef = FF299D6C26D7C9460065A925 /* plane.obj */; };
+		FF299D7426D7C9460065A925 /* teapot.obj in Resources */ = {isa = PBXBuildFile; fileRef = FF299D6D26D7C9460065A925 /* teapot.obj */; };
+		FF299D7526D7C9460065A925 /* objShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = FF299D6E26D7C9460065A925 /* objShader.vsh */; };
+		FF299D7626D7C9460065A925 /* bunny.obj in Resources */ = {isa = PBXBuildFile; fileRef = FF299D6F26D7C9460065A925 /* bunny.obj */; };
+		FF299D7926D7C9460065A925 /* objShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = FF299D7226D7C9460065A925 /* objShader.fsh */; };
+		FF299D7C26D84B430065A925 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF299D7B26D84B430065A925 /* GLKit.framework */; };
+		FF299D7E26D84B560065A925 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF299D7D26D84B560065A925 /* OpenGL.framework */; };
+		FF299D8026D84B5D0065A925 /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF299D7F26D84B5D0065A925 /* ModelIO.framework */; };
+		FF299D8226D84B9E0065A925 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF299D8126D84B9E0065A925 /* CoreVideo.framework */; };
+		FF299D8426D84F610065A925 /* OBJ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF299D8326D84F610065A925 /* OBJ.cpp */; };
+		FF299D8726D850EF0065A925 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF299D8626D850EF0065A925 /* WindowController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF299D3A26D7C2EF0065A925 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF299D1B26D7C2ED0065A925 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF299D2226D7C2ED0065A925;
+			remoteInfo = ShowObjModel;
+		};
+		FF299D4526D7C2EF0065A925 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF299D1B26D7C2ED0065A925 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF299D2226D7C2ED0065A925;
+			remoteInfo = ShowObjModel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF299D2326D7C2ED0065A925 /* ShowObjModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShowObjModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF299D2626D7C2ED0065A925 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF299D2726D7C2ED0065A925 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF299D2926D7C2ED0065A925 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FF299D2A26D7C2ED0065A925 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		FF299D2C26D7C2EF0065A925 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF299D2F26D7C2EF0065A925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF299D3126D7C2EF0065A925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF299D3226D7C2EF0065A925 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF299D3426D7C2EF0065A925 /* ShowObjModel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShowObjModel.entitlements; sourceTree = "<group>"; };
+		FF299D3926D7C2EF0065A925 /* ShowObjModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShowObjModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF299D3D26D7C2EF0065A925 /* ShowObjModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowObjModelTests.m; sourceTree = "<group>"; };
+		FF299D3F26D7C2EF0065A925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF299D4426D7C2EF0065A925 /* ShowObjModelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShowObjModelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF299D4826D7C2EF0065A925 /* ShowObjModelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowObjModelUITests.m; sourceTree = "<group>"; };
+		FF299D4A26D7C2EF0065A925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF299D5626D7C3200065A925 /* ObjGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjGLView.h; sourceTree = "<group>"; };
+		FF299D5726D7C3200065A925 /* ObjGLView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ObjGLView.mm; sourceTree = "<group>"; };
+		FF299D5926D7C3A20065A925 /* Shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		FF299D5A26D7C3A20065A925 /* Shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
+		FF299D5C26D7C4FC0065A925 /* StringSupport.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = StringSupport.mm; sourceTree = "<group>"; };
+		FF299D5D26D7C4FC0065A925 /* StringSupport.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StringSupport.hpp; sourceTree = "<group>"; };
+		FF299D5F26D7C6BD0065A925 /* Mesh.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Mesh.mm; sourceTree = "<group>"; };
+		FF299D6026D7C6BD0065A925 /* Mesh.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Mesh.hpp; sourceTree = "<group>"; };
+		FF299D6226D7C7290065A925 /* Texture.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Texture.mm; sourceTree = "<group>"; };
+		FF299D6326D7C7290065A925 /* Texture.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Texture.hpp; sourceTree = "<group>"; };
+		FF299D6526D7C7760065A925 /* Time.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Time.mm; sourceTree = "<group>"; };
+		FF299D6626D7C7760065A925 /* Time.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Time.hpp; sourceTree = "<group>"; };
+		FF299D6926D7C7E50065A925 /* OBJ.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OBJ.hpp; sourceTree = "<group>"; };
+		FF299D6B26D7C8D90065A925 /* GLError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLError.h; sourceTree = "<group>"; };
+		FF299D6C26D7C9460065A925 /* plane.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plane.obj; sourceTree = "<group>"; };
+		FF299D6D26D7C9460065A925 /* teapot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teapot.obj; sourceTree = "<group>"; };
+		FF299D6E26D7C9460065A925 /* objShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = objShader.vsh; sourceTree = "<group>"; };
+		FF299D6F26D7C9460065A925 /* bunny.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bunny.obj; sourceTree = "<group>"; };
+		FF299D7226D7C9460065A925 /* objShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = objShader.fsh; sourceTree = "<group>"; };
+		FF299D7B26D84B430065A925 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		FF299D7D26D84B560065A925 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		FF299D7F26D84B5D0065A925 /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
+		FF299D8126D84B9E0065A925 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		FF299D8326D84F610065A925 /* OBJ.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OBJ.cpp; sourceTree = "<group>"; };
+		FF299D8526D850EF0065A925 /* WindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
+		FF299D8626D850EF0065A925 /* WindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF299D2026D7C2ED0065A925 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF299D8026D84B5D0065A925 /* ModelIO.framework in Frameworks */,
+				FF299D7C26D84B430065A925 /* GLKit.framework in Frameworks */,
+				FF299D7E26D84B560065A925 /* OpenGL.framework in Frameworks */,
+				FF299D8226D84B9E0065A925 /* CoreVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF299D3626D7C2EF0065A925 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF299D4126D7C2EF0065A925 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF299D1A26D7C2ED0065A925 = {
+			isa = PBXGroup;
+			children = (
+				FF299D2526D7C2ED0065A925 /* ShowObjModel */,
+				FF299D3C26D7C2EF0065A925 /* ShowObjModelTests */,
+				FF299D4726D7C2EF0065A925 /* ShowObjModelUITests */,
+				FF299D2426D7C2ED0065A925 /* Products */,
+				FF299D7A26D84B430065A925 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF299D2426D7C2ED0065A925 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF299D2326D7C2ED0065A925 /* ShowObjModel.app */,
+				FF299D3926D7C2EF0065A925 /* ShowObjModelTests.xctest */,
+				FF299D4426D7C2EF0065A925 /* ShowObjModelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF299D2526D7C2ED0065A925 /* ShowObjModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF299D6F26D7C9460065A925 /* bunny.obj */,
+				FF299D7226D7C9460065A925 /* objShader.fsh */,
+				FF299D6E26D7C9460065A925 /* objShader.vsh */,
+				FF299D6C26D7C9460065A925 /* plane.obj */,
+				FF299D6D26D7C9460065A925 /* teapot.obj */,
+				FF299D2626D7C2ED0065A925 /* AppDelegate.h */,
+				FF299D2726D7C2ED0065A925 /* AppDelegate.m */,
+				FF299D6B26D7C8D90065A925 /* GLError.h */,
+				FF299D8526D850EF0065A925 /* WindowController.h */,
+				FF299D8626D850EF0065A925 /* WindowController.m */,
+				FF299D2926D7C2ED0065A925 /* ViewController.h */,
+				FF299D2A26D7C2ED0065A925 /* ViewController.mm */,
+				FF299D5626D7C3200065A925 /* ObjGLView.h */,
+				FF299D5726D7C3200065A925 /* ObjGLView.mm */,
+				FF299D5926D7C3A20065A925 /* Shader.cpp */,
+				FF299D5A26D7C3A20065A925 /* Shader.hpp */,
+				FF299D5C26D7C4FC0065A925 /* StringSupport.mm */,
+				FF299D5D26D7C4FC0065A925 /* StringSupport.hpp */,
+				FF299D5F26D7C6BD0065A925 /* Mesh.mm */,
+				FF299D6026D7C6BD0065A925 /* Mesh.hpp */,
+				FF299D6226D7C7290065A925 /* Texture.mm */,
+				FF299D6326D7C7290065A925 /* Texture.hpp */,
+				FF299D6526D7C7760065A925 /* Time.mm */,
+				FF299D6626D7C7760065A925 /* Time.hpp */,
+				FF299D8326D84F610065A925 /* OBJ.cpp */,
+				FF299D6926D7C7E50065A925 /* OBJ.hpp */,
+				FF299D2C26D7C2EF0065A925 /* Assets.xcassets */,
+				FF299D2E26D7C2EF0065A925 /* Main.storyboard */,
+				FF299D3126D7C2EF0065A925 /* Info.plist */,
+				FF299D3226D7C2EF0065A925 /* main.m */,
+				FF299D3426D7C2EF0065A925 /* ShowObjModel.entitlements */,
+			);
+			path = ShowObjModel;
+			sourceTree = "<group>";
+		};
+		FF299D3C26D7C2EF0065A925 /* ShowObjModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF299D3D26D7C2EF0065A925 /* ShowObjModelTests.m */,
+				FF299D3F26D7C2EF0065A925 /* Info.plist */,
+			);
+			path = ShowObjModelTests;
+			sourceTree = "<group>";
+		};
+		FF299D4726D7C2EF0065A925 /* ShowObjModelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF299D4826D7C2EF0065A925 /* ShowObjModelUITests.m */,
+				FF299D4A26D7C2EF0065A925 /* Info.plist */,
+			);
+			path = ShowObjModelUITests;
+			sourceTree = "<group>";
+		};
+		FF299D7A26D84B430065A925 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF299D8126D84B9E0065A925 /* CoreVideo.framework */,
+				FF299D7F26D84B5D0065A925 /* ModelIO.framework */,
+				FF299D7D26D84B560065A925 /* OpenGL.framework */,
+				FF299D7B26D84B430065A925 /* GLKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF299D2226D7C2ED0065A925 /* ShowObjModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF299D4D26D7C2EF0065A925 /* Build configuration list for PBXNativeTarget "ShowObjModel" */;
+			buildPhases = (
+				FF299D1F26D7C2ED0065A925 /* Sources */,
+				FF299D2026D7C2ED0065A925 /* Frameworks */,
+				FF299D2126D7C2ED0065A925 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShowObjModel;
+			productName = ShowObjModel;
+			productReference = FF299D2326D7C2ED0065A925 /* ShowObjModel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF299D3826D7C2EF0065A925 /* ShowObjModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF299D5026D7C2EF0065A925 /* Build configuration list for PBXNativeTarget "ShowObjModelTests" */;
+			buildPhases = (
+				FF299D3526D7C2EF0065A925 /* Sources */,
+				FF299D3626D7C2EF0065A925 /* Frameworks */,
+				FF299D3726D7C2EF0065A925 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF299D3B26D7C2EF0065A925 /* PBXTargetDependency */,
+			);
+			name = ShowObjModelTests;
+			productName = ShowObjModelTests;
+			productReference = FF299D3926D7C2EF0065A925 /* ShowObjModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF299D4326D7C2EF0065A925 /* ShowObjModelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF299D5326D7C2EF0065A925 /* Build configuration list for PBXNativeTarget "ShowObjModelUITests" */;
+			buildPhases = (
+				FF299D4026D7C2EF0065A925 /* Sources */,
+				FF299D4126D7C2EF0065A925 /* Frameworks */,
+				FF299D4226D7C2EF0065A925 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF299D4626D7C2EF0065A925 /* PBXTargetDependency */,
+			);
+			name = ShowObjModelUITests;
+			productName = ShowObjModelUITests;
+			productReference = FF299D4426D7C2EF0065A925 /* ShowObjModelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF299D1B26D7C2ED0065A925 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FF299D2226D7C2ED0065A925 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					FF299D3826D7C2EF0065A925 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FF299D2226D7C2ED0065A925;
+					};
+					FF299D4326D7C2EF0065A925 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FF299D2226D7C2ED0065A925;
+					};
+				};
+			};
+			buildConfigurationList = FF299D1E26D7C2ED0065A925 /* Build configuration list for PBXProject "ShowObjModel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF299D1A26D7C2ED0065A925;
+			productRefGroup = FF299D2426D7C2ED0065A925 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF299D2226D7C2ED0065A925 /* ShowObjModel */,
+				FF299D3826D7C2EF0065A925 /* ShowObjModelTests */,
+				FF299D4326D7C2EF0065A925 /* ShowObjModelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF299D2126D7C2ED0065A925 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF299D7426D7C9460065A925 /* teapot.obj in Resources */,
+				FF299D7926D7C9460065A925 /* objShader.fsh in Resources */,
+				FF299D2D26D7C2EF0065A925 /* Assets.xcassets in Resources */,
+				FF299D7626D7C9460065A925 /* bunny.obj in Resources */,
+				FF299D3026D7C2EF0065A925 /* Main.storyboard in Resources */,
+				FF299D7526D7C9460065A925 /* objShader.vsh in Resources */,
+				FF299D7326D7C9460065A925 /* plane.obj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF299D3726D7C2EF0065A925 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF299D4226D7C2EF0065A925 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF299D1F26D7C2ED0065A925 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF299D6726D7C7760065A925 /* Time.mm in Sources */,
+				FF299D2B26D7C2ED0065A925 /* ViewController.mm in Sources */,
+				FF299D3326D7C2EF0065A925 /* main.m in Sources */,
+				FF299D8426D84F610065A925 /* OBJ.cpp in Sources */,
+				FF299D2826D7C2ED0065A925 /* AppDelegate.m in Sources */,
+				FF299D6126D7C6BD0065A925 /* Mesh.mm in Sources */,
+				FF299D5826D7C3200065A925 /* ObjGLView.mm in Sources */,
+				FF299D8726D850EF0065A925 /* WindowController.m in Sources */,
+				FF299D6426D7C7290065A925 /* Texture.mm in Sources */,
+				FF299D5E26D7C4FC0065A925 /* StringSupport.mm in Sources */,
+				FF299D5B26D7C3A20065A925 /* Shader.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF299D3526D7C2EF0065A925 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF299D3E26D7C2EF0065A925 /* ShowObjModelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF299D4026D7C2EF0065A925 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF299D4926D7C2EF0065A925 /* ShowObjModelUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF299D3B26D7C2EF0065A925 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF299D2226D7C2ED0065A925 /* ShowObjModel */;
+			targetProxy = FF299D3A26D7C2EF0065A925 /* PBXContainerItemProxy */;
+		};
+		FF299D4626D7C2EF0065A925 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF299D2226D7C2ED0065A925 /* ShowObjModel */;
+			targetProxy = FF299D4526D7C2EF0065A925 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF299D2E26D7C2EF0065A925 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF299D2F26D7C2EF0065A925 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF299D4B26D7C2EF0065A925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FF299D4C26D7C2EF0065A925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FF299D4E26D7C2EF0065A925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ShowObjModel/ShowObjModel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ShowObjModel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsp.org.ShowObjModel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF299D4F26D7C2EF0065A925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ShowObjModel/ShowObjModel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ShowObjModel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsp.org.ShowObjModel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FF299D5126D7C2EF0065A925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ShowObjModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsp.org.ShowObjModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShowObjModel.app/Contents/MacOS/ShowObjModel";
+			};
+			name = Debug;
+		};
+		FF299D5226D7C2EF0065A925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ShowObjModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsp.org.ShowObjModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShowObjModel.app/Contents/MacOS/ShowObjModel";
+			};
+			name = Release;
+		};
+		FF299D5426D7C2EF0065A925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ShowObjModelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsp.org.ShowObjModelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ShowObjModel;
+			};
+			name = Debug;
+		};
+		FF299D5526D7C2EF0065A925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ShowObjModelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsp.org.ShowObjModelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ShowObjModel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF299D1E26D7C2ED0065A925 /* Build configuration list for PBXProject "ShowObjModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF299D4B26D7C2EF0065A925 /* Debug */,
+				FF299D4C26D7C2EF0065A925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF299D4D26D7C2EF0065A925 /* Build configuration list for PBXNativeTarget "ShowObjModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF299D4E26D7C2EF0065A925 /* Debug */,
+				FF299D4F26D7C2EF0065A925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF299D5026D7C2EF0065A925 /* Build configuration list for PBXNativeTarget "ShowObjModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF299D5126D7C2EF0065A925 /* Debug */,
+				FF299D5226D7C2EF0065A925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF299D5326D7C2EF0065A925 /* Build configuration list for PBXNativeTarget "ShowObjModelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF299D5426D7C2EF0065A925 /* Debug */,
+				FF299D5526D7C2EF0065A925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF299D1B26D7C2ED0065A925 /* Project object */;
+}
